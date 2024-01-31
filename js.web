@@ -18,3 +18,53 @@ for (var i=0; i < todos.length;i++){
         break;
     }
 }
+  if(flag==1)
+    {
+        alert ("todo already present");
+
+    }
+    if(todos.value!=""
+&& flag ==0)}
+todos.push(todo.value);
+let div = document.createElement("div");
+let editbtn = document.createElement("button");
+let deletebtn = document.createElement("button");
+var li = document.createElement("li");
+div.setAttribute("id",todosid);
+div.setAttribute("class","tododiv");
+div.appendChild(li);
+div.appendChild(editbtn);
+div.appendChild(deletebtn);
+div.style.display="flex";
+div.style.justifyContent="space-between";
+div.style.alignContent="center"
+
+editbtn.innerHTML="edit";
+editbtn.style.marginRight="10px";
+editbtn.style.marginLeft="30px";
+editbtn.style.padding="5px 10px";
+editbtn.style.fontSize="20px";
+editbin.style.borderRadius="5px";
+
+editbin.onclick=function()
+{
+    var editbinput =document.createElement("input");
+    editbin.setAttribute("type","text");
+    editbin.setAttribute("id","editinpiut");
+    editbtn.style.marginRight="10px";
+    editbtn.style.marginLeft="30px";
+    editbtn.style.padding="5px ";
+    editbtn.style.border="1px solid #333";
+    editbin.style.borderRadius="5px";
+    editbin.style.outline = "none";
+    editbin.style.fontsize ="16px"
+    editbinput.value = li.innerHTML;
+    div.replaceChild(editbinput,li);
+    editbin.onclick = function (){
+        li.innerhtml = editbin.value;
+        div.replaceChild(li,editbinput);
+        editbin.innerHTML ="edit";
+    }
+    deletebtn.innerHTML="delete";
+    
+}
