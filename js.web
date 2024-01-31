@@ -1,0 +1,20 @@
+var todos =[];
+var todo=document;
+getelementbyid("todo");
+var
+todoslist =document;
+getelementsbyid("add");
+var totoid=0;
+function Addtodo()
+{
+    if(todo.value==""){
+alert("please enter something");
+    }
+}
+var flag=0;
+for (var i=0; i < todos.length;i++){
+    if (todos[i] ==todos.value){
+        flag = 1;
+        break;
+    }
+}
